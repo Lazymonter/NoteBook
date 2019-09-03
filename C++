@@ -1,0 +1,7 @@
+字符串
+多线程
+thread初始化时使用类的成员函数：使用mem_fn
+thread *t[4];
+for(int i = 0;i < 4;i++){
+    t[i] = new thread(mem_fn(&position::build_index),&p[i],final)；
+}
