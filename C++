@@ -1,4 +1,16 @@
 字符串
+字符串与数值转换
+int->string
+int a = 5;
+std::stringstream ssTemp;  
+ssTemp<<a;  
+std::string strDst=ssTemp.str(); 
+string->int
+int a = 0;
+char *strData = "123";
+stringstream stream(strData );  
+stream>>a; 
+
 多线程
 thread初始化时使用类的成员函数：使用mem_fn
 thread *t[4];
