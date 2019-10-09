@@ -1,6 +1,7 @@
-字符串
-字符串与数值转换
+一、字符串
+1、字符串与数值转换
 int->string
+示例：
 int a = 5;
 std::stringstream ssTemp;  
 ssTemp<<a;  
@@ -11,8 +12,9 @@ char *strData = "123";
 stringstream stream(strData );  
 stream>>a; 
 
-多线程
-thread初始化时使用类的成员函数：使用mem_fn
+二、多线程
+1、thread初始化时使用类的成员函数：使用mem_fn
+示例：
 thread *t[4];
 for(int i = 0;i < 4;i++){
     t[i] = new thread(mem_fn(&position::build_index),&p[i],final)；
