@@ -1,2 +1,4 @@
-1、geojson标准格式
+1、geojson标准格式及说明
 https://www.jianshu.com/p/852d7ad081b3
+https://www.jianshu.com/p/cebf79b9eaef
+测试网站：http://geojson.io
