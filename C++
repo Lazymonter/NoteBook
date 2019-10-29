@@ -6,16 +6,21 @@ int a = 5;
 std::stringstream ssTemp;  
 ssTemp<<a;  
 std::string strDst=ssTemp.str(); 
+OR:to_string();
 string->int
 int a = 0;
 char *strData = "123";
-stringstream stream(strData );  
+stringstream stream(strData);  
 stream>>a; 
-
+2、删除string最后一个字符
+str.substr(0,str.length() - 1);
+str.erase(str.end() - 1);
+str.pop_back();
 二、多线程
 1、thread初始化时使用类的成员函数：使用mem_fn
 示例：
 thread *t[4];
 for(int i = 0;i < 4;i++){
     t[i] = new thread(mem_fn(&position::build_index),&p[i],final)；
+    t[i].join();
 }
