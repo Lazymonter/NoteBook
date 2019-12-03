@@ -3,3 +3,5 @@ programming pearls
 practice of programming
 Modern operating systems
 Programming language pragmatics
+UNIX网络编程
+TCP/IP详解
